@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <!-- <script src="lib/onsenui/js/onsenui.min.js"></script> -->
+　<script src="main.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<script src='enchant.min.js'></script>
+<script>
+    enchant();
+    window.onload = function () {
+    var game = new Game(1440, 2560);
+    game.preload('img/r.png', 'img/g.png', 'img/b.png');//画像をロードする
+    game.rootScene.backgroundColor = "white";
+    game.fps = 30;
+ game.onload = function () {
+        var label = new Label('game load successful!');//test-text
+        var M_IMG = 'img/r.png';//赤まる
+        var T_IMG = 'img/g.png';//緑さんかく、とらいあんぐる
+        var S_IMG = 'img/b.png';//青しかく
+        var M_IMG = 1;
+        var T_IMG = 2;
+        var S_IMG = 3;
+        var B_X = 10;//よこ
+        var B_Y = 20;//たて
+        
+        var scene = new Scene();
+game.pushScene(scene);
+// node を追加する例
+scene.addChild(sprite);
+        
+        var randnum = 1 + Math.floor( Math.random() * 3);
+
+　　　　var sprite = new Sprite(64, 64); 
+　　　　sprite.image = game.assets['img/b.png']; 
+　　　　scene.addChild(sprite);
+　　　　
+　　　　
+        var array = new Array(1);
+        var records = ['M', 'T', 'S'];//配列
+        var rand = records[ Math.floor( Math.random() * records.length)];
+        for (var y=0; y < 10; y++){
+        for (var x=0; x < 20; x++){
+        array[x][y] = 'rand';//二次元配列にrandをあてる
+        
+        }
+
+        }
+        }
+ };
+ }
+ 
+    game.start();
+</script>
+</body>
+</html>

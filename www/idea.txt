@@ -1,0 +1,76 @@
+        
+        blockMap = new Array(GAME_WIDTH/BLOCK_WIDTH);
+        for (var i=0; i<blockMap.length; i++){
+        var MARU = 0;
+        var SANKAKU = 0;
+        var SIKAKU = 0;
+        if ()
+         MARU = ;
+        }else if(){
+         SANKAKU = 255;   
+        }else{
+         SIKAKU = 255;
+        }
+        blockMap[i][j] = new Block(i*BLOCK_WIDTH, j*BLOCK_HEIGHT, MARU, SANKAKU, SIKAKU);
+        game.rootScene.addChild(blockMap[i][j])
+
+
+    enchant();
+    function callinit() {
+ if (getUa() === false) init();
+  else document.addEventListener("deviceready", init, false);
+}
+function getUa() {
+  if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 ) {
+    return 'iPhone'; 
+  } else if(navigator.userAgent.indexOf('iPad') > 0) {
+    return 'iPad';
+  } else if(navigator.userAgent.indexOf('Android') > 0) {
+    return 'Android';
+  } else return false;
+}
+
+        var ary = [
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0,0],
+        ];
+        //bl[cnt] = new Sprite('B_X', 'B_Y');
+        //bl[cnt].image = ['rand'];
+        //bl[cnt].x = x*10;
+        //bl[cnt].y = y*20;
+        //game.rootScene.addChild(bl[cnt]);
+        //cnt = cnt + 1;
+                
+        /*var sprite.addEventListener('touchstart', function();) {
+        bl.x*bl.y = game.assets['img/w.png'];'X:' + e.localX + ',' + 'Y:' + e.localY;
+        };*/
+        /*var bln = new Sprite(40,40);
+        game.rootScene.addEventListener('touchstart', function(e) {
+        if ( ){
+        case bl.x = e.localX:
+         bln.image = game.assets['img/w.png'];// 画像を適用
+            break;
+        case bl.y = e.localY:
+         bln.image = game.assets['img/w.png'];
+            break;
+        });
+        };
+        game.rootScene.addChild(bln); */
